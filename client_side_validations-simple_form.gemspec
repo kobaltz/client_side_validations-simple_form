@@ -19,6 +19,8 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z -- {README.md,lib,vendor}`.split("\x0")
   spec.require_paths = ['lib']
 
+  spec.post_install_message = "*** WARNING ***\nClientSideValidations-simple_form 5.0 with Rails 5 support was released. You are using a deprecated branch that will be removed soon."
+
   spec.add_dependency 'client_side_validations', '~> 5.0.0'
   spec.add_dependency 'simple_form', '~> 3.4'
 
